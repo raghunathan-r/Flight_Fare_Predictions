@@ -6,7 +6,7 @@ import pickle
 st.header("Fligh Fare Prediction App")
 
 # Load the flight data from a CSV file or a database
-flight_data = pd.read_excel("train_dataset_kaggle.xlsx")
+flight_data = pd.read_excel("./../train_dataset_kaggle.xlsx")
 
 # Create the dropdown menus for the source and destination cities, departure and arrival dates,
 # number of stops, and flight company
@@ -26,7 +26,7 @@ Arrival_min = int(pd.to_datetime(arrival_date, format ="%Y-%m-%dT%H:%M").minute)
 dur_hour = abs(Arrival_hour - Dep_hour)
 dur_min = abs(Arrival_min - Dep_min)
 
-num_stops = st.selectbox("Number of Stops", ["0 Stops", "1 Stop", "2 Stops", "3 Stops", "4 Stops"])
+num_stops = st.selectbox("Number of Stops", ["0 Stops", "1 Stops", "2 Stops", "3 Stops", "4 Stops"])
 if (num_stops == "0 Stops"):
     num_stops = 0
 elif (num_stops == "1 Stops"):
