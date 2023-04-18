@@ -13,6 +13,8 @@ https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh?resource=
 https://www.linkedin.com/posts/amar-mandal_python-machinelearning-ai-activity-6684710743859888128-6ktE/
 https://www.youtube.com/watch?v=y4EMEpEnElQ
 
+# Conda commands to create and activate virtual environment
+
 ## To run the streamlit app
 - Run the flight_price.ipynb file
 - streamlit run app.py
@@ -21,4 +23,12 @@ https://www.youtube.com/watch?v=y4EMEpEnElQ
 - Find dataset with more cities
 - More flight company data needed
 - Need to implement hybrid model
+
+# To run the project locally
+
+# To Do after every update
+- Move the newly installed libraries in the mlenv virtual environment to the requirements.txt file
+```
+pip freeze > requirements.txt
+```
 
