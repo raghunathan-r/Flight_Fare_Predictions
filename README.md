@@ -1,6 +1,16 @@
 Flight Fare Prediction
 ==============================
 
+## References
+Structure of the project - [Medium article](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa)
+
+
+
+
+
+==============================
+
+
 Developing a machine learning-based model for predicting the optimal airfare price at a given time slot.
 
 Project Organization
