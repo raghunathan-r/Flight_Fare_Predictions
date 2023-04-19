@@ -4,14 +4,36 @@ Flight Fare Prediction
 ## References
 Structure of the project - [Medium article](https://medium.com/analytics-vidhya/folder-structure-for-machine-learning-projects-a7e451a8caaa)
 
+Updates on the project - [Notion notes](https://www.notion.so/raghunathan/Phase-4-Presentation-Final-Year-Project-d98f36e0481d44f188f44516ead78c01?pvs=4)
+
+---
+
+## Run in local environment
+```
+python setup.py
+
+python /src/main.py
+
+streamlit run /src/main.py
+```
+
+---
+
+## To contribute
+1. Go through the folder structure and nomenclature
+2. Create a virtual python environment
+    ```
+    conda activate mlenv
+    ```
+    [For more info click here]
+2. Update the required libraries in requirements.txt
+    ```
+    pip freeze /requirements.txt
+    ```
 
 
+---
 
-
-==============================
-
-
-Developing a machine learning-based model for predicting the optimal airfare price at a given time slot.
 
 Project Organization
 ------------

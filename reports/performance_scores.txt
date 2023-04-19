@@ -1,0 +1,27 @@
+RandomForest Regressor...
+Mean Absolute Error (MAE): 2130.841
+Mean Squared Error (MSE): 18829696.387
+Root Mean Squared Error (RMSE): 4339.32
+R2_score: 0.954371
+Root Mean Squared Log Error (RMSLE): 8.375
+
+Gradient Boosting...
+Mean Absolute Error (MAE): 4029.051
+Mean Squared Error (MSE): 42650374.964
+Root Mean Squared Error (RMSE): 6530.725
+R2_score: 0.896647
+Root Mean Squared Log Error (RMSLE): 8.784
+
+Linear Regression...
+Mean Absolute Error (MAE): 6807.192
+Mean Squared Error (MSE): 94958199.61
+Root Mean Squared Error (RMSE): 9744.65
+R2_score: 0.769891
+Root Mean Squared Log Error (RMSLE): 9.184
+
+Voting Regressor...
+Mean Absolute Error (MAE): 3824.142
+Mean Squared Error (MSE): 35308049.128
+Root Mean Squared Error (RMSE): 5942.058
+R2_score: 0.914439
+Root Mean Squared Log Error (RMSLE): 8.69
