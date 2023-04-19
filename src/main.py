@@ -23,11 +23,11 @@ duration = st.number_input('Duration of Flight in Hours', min_value=0.0, max_val
 # airline = st.selectbox('Airline', df.columns[df.columns.str.startswith('Airline_')])
 airline_cols = df.columns[df.columns.str.startswith('Airline_')]
 airline_options = [col.replace('Airline__', '') for col in airline_cols]
-airline = st.selectbox('Airline', airline_options)
+airline = "Airline__" + st.selectbox('Airline', airline_options)
 
 class_cols = df.columns[df.columns.str.startswith('Class_')]
 class_options = [col.replace('Class__', '') for col in class_cols]
-flight_class = st.selectbox('Flight Class', class_options)
+flight_class = "Class__" + st.selectbox('Flight Class', class_options)
 
 source = st.selectbox('Source', df.columns[df.columns.str.startswith('Source_')])
 
@@ -49,12 +49,13 @@ destination = st.selectbox('Destination', df.columns[df.columns.str.startswith('
 # })
 # Create a new row for the user inputs
 user_inputs = pd.DataFrame({
-    'Journey_date': [journey_date],
+    # 'Journey_date': [journey_date],
     'Journey_day': [journey_day],
     'Days_left': [days_left],
     'Duration_in_hours': [duration],
     **{col: [0] for col in df.columns if col not in cat_features}
 })
+user_inputs.drop(["Date_of_journey", "Journey_day"], axis=1, inplace=True)
 
 user_inputs[airline] = 1
 user_inputs[flight_class] = 1
